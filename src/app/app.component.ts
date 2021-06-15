@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularBlog';
+  title = 'Angular Blog App';
+  name = "brush"
+  getName() {
+    return this.name
+  }
+  obj = {
+    name: "any", age: 14
+  }
+
+  arr = ['broush',"tony","peater"]
+  siteName = window.location.href;
+
 }
