@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Angular Blog App';
   name = "brush"
-  getName() {
-    return this.name
+  getName(eName:any) {
+    alert("the name "+eName)
   }
   obj = {
     name: "any", age: 14
