@@ -1,5 +1,9 @@
 <h1>app -root</h1>
 
-<input type="text" #inp  >
-<button (click)="getVal(inp.value)" >Click me</button>
-<p>{{siteName}}</p>
+<h1 *ngIf="show else " >hello</h1>
+<ng-template>
+    hi there 
+</ng-template>
+
+<button (click)="enableInput">change</button>
+

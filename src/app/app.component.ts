@@ -8,20 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Angular Blog App';
   name = "brush"
-  getName(eName:any) {
-    alert("the name "+eName)
+  show = true;
+  enableInput(){
+    this.show = false;
   }
-  obj = {
-    name: "any", age: 14
-  }
-
-  arr = ['broush',"tony","peater"]
-  siteName = window.location.href;
-
-  getVal(val:any) {
-    this.siteName = val;
-  };
-
   
 
 }
