@@ -18,11 +18,10 @@ export class AppComponent {
   arr = ['broush',"tony","peater"]
   siteName = window.location.href;
 
-  myEvent = (event:any) => {
-    console.log(event)
-  }
+  getVal(val:any) {
+    this.siteName = val;
+  };
 
-  myKeyup = (event:any) => {
-    console.log(event)
-  }
+  
+
 }
