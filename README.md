@@ -1,3 +1,10 @@
+### INSTALL THE ANGUALR 10
+We need Node (to check use :***node -v***)
+
+### Install comand line for angular
+npm install -g @angular-cli
+
+
 # AngularBlog
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
