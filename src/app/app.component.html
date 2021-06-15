@@ -5,3 +5,9 @@
 <app-signup></app-signup>
 
 <button (click)="getName(name)">Get My name</button>
+<button (click)="myEvent('console click error')">Click</button>
+
+<input type="text" #box (keydown.space)="myKeyup(box.value)">
+
+<h1 (mouseover)="myKeyup('hello my app')" style="background-color:red">app</h1>
+<h1 (mouseleave)="myKeyup('hello my app')" style="background-color:red">app</h1>
