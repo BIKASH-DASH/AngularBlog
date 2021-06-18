@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Angular Blog App';
   name = "brush"
-  show = true;
+  show = 'green';
   enableInput(){
-    this.show = false;
+    this.show = 'no';
   }
   
 

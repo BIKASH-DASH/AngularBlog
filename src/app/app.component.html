@@ -1,9 +1,22 @@
 <h1>app -root</h1>
 
-<h1 *ngIf="show else " >hello</h1>
-<ng-template>
-    hi there 
+<h1 *ngIf="show=='yes'; then ifBlock else elseBlock" >hello</h1>
+<ng-template #ifBlock>
+    <h1>hello</h1>
+</ng-template>
+<ng-template #elseBlock>
+    <h1>else Blog</h1>
 </ng-template>
 
-<button (click)="enableInput">change</button>
+<ng-template [ngIf]="show=='red'">
+    <h1>Read Block</h1>
+</ng-template>
+
+<ng-template [ngIf]="show=='green'">
+    <h1>green Block</h1>
+</ng-template>
+
+<ng-template [ngIf]="show=='blue'">
+    <h1>blue Block</h1>
+</ng-template>
 
