@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'Angular Blog App';
   name = "brush"
   show = 'green';
+  color = "blue";
   enableInput(){
     this.show = 'no';
   }
