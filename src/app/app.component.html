@@ -1,9 +1,8 @@
 <h1>app -root</h1>
 
-<div class="Names">
-    <div *ngFor="let objName of names">
-        <h1>{{objName.name}}</h1>
-        <p>{{objName.age}}</p>
-        <span>{{objName.email}}</span>
-    </div>
-</div>
+<form action="" #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)" >
+    <input ngModel type="text" placeholder="enter name" name="username"><br><br>
+    <input ngModel  type="text" placeholder="enter age" name="age"><br><br>
+    <input ngModel type="text" placeholder="enter email" name="email"><br><br>
+    <button>Submit</button>
+</form>

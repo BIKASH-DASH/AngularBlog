@@ -11,18 +11,22 @@ export class AppComponent {
   show = 'green';
   names = [
     {
-      name:'biaksh',
-      age : 32,
-      email : "biaksh@gmail.com",
+      name: 'biaksh',
+      age: 32,
+      email: "biaksh@gmail.com",
     },
     {
-      name:'sameer',
-      age : 34
+      name: 'sameer',
+      age: 34
     },
     {
-      name:'dash',
-      age : 25
+      name: 'dash',
+      age: 25
     },
   ]
+
+  getUserValue(value:any) {
+    console.log(value)
+  }
 
 }
