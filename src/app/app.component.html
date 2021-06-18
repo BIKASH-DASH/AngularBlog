@@ -1,14 +1,9 @@
 <h1>app -root</h1>
 
-
-<span [ngSwitch]="color">
-<p *ngSwitchCase="'red'">
-    Red
-</p>
-<p *ngSwitchCase="'blue'">
-    Blue
-</p>
-<p *ngSwitchDefault>
-asaas
-</p>
-</span>      
+<div class="Names">
+    <div *ngFor="let objName of names">
+        <h1>{{objName.name}}</h1>
+        <p>{{objName.age}}</p>
+        <span>{{objName.email}}</span>
+    </div>
+</div>

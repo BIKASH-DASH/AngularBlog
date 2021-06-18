@@ -9,10 +9,20 @@ export class AppComponent {
   title = 'Angular Blog App';
   name = "brush"
   show = 'green';
-  color = "blue";
-  enableInput(){
-    this.show = 'no';
-  }
-  
+  names = [
+    {
+      name:'biaksh',
+      age : 32,
+      email : "biaksh@gmail.com",
+    },
+    {
+      name:'sameer',
+      age : 34
+    },
+    {
+      name:'dash',
+      age : 25
+    },
+  ]
 
 }
